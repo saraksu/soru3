@@ -1,0 +1,16 @@
+import java.util.Scanner
+fun main() {
+    val scanner = Scanner(System.`in`)
+    println("Sınav notunuzu giriniz: ")
+    val score = scanner.nextInt()
+
+    if (score != null) {
+        if (score >= 70) {
+            println("Geçtiniz")
+        } else {
+            println("Kaldınız")
+        }
+    } else {
+        println("Geçerli bir not girmediniz.")
+    }
+}
